@@ -6,7 +6,6 @@ const UsernameField = ({ recursiveFetchAndWait, setGameList}) => {
 
     const handleKeyPress = (event) => {
         if (event.key === 'Enter') {
-            window.umami.track("Enter key pressed")
             setGameList([]);
             recursiveFetchAndWait(COLLECTION_ENDPOINT + event.target.value.toLowerCase()); 
         }
@@ -23,7 +22,6 @@ const UsernameField = ({ recursiveFetchAndWait, setGameList}) => {
             />
             <button type="button"
                     onClick={ (event) => {
-                                window.umami.track("Clicked Submit");
                                 setGameList([]);
                                 recursiveFetchAndWait(COLLECTION_ENDPOINT + document.querySelector('#searchBox').value.toLowerCase());
                             } }>
