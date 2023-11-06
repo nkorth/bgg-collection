@@ -142,7 +142,7 @@ const App = () => {
 					}
 				}/>
 			<div id='footer'>
-				<p>Page created with <span role="img" aria-label="Red Heart">❤️</span></p>
+				<p><a href="https://github.com/nkorth/bgg-collection">Github</a></p>
 			</div>
 		</div>
 	)
